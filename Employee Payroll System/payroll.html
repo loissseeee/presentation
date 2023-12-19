@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PAYROLL</title>
+	<link rel="stylesheet" type="text/css" href="dbdesign.css">
+<style>
+
+
+* {
+	box-sizing: border-box;
+
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size:16px;
+}
+
+/*bg of nav*/
+.sidenav { 
+  height: 100%;
+  width: 15.8%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  padding-top: 25px;
+}
+
+/*cont of nav*/
+.sidenav a {
+  text-align: center;
+  padding: 25.5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/*trans of nav*/
+.sidenav a:hover {
+  color: white;
+}
+
+
+.content{
+	margin-left:20%;
+	margin-right:10%;
+	margin-top:80;
+}
+
+.content2{
+	text-align: center;
+}
+
+.logo{
+width: 100%;
+height: 12%;
+}
+
+
+
+
+
+
+	.box{
+		padding: 5%;
+		
+
+	}
+
+
+	#space{
+		font-weight: bold;
+		font-size: 25px;
+		padding-top: 10px;
+	}
+
+
+
+
+	.ul1 li{
+		display: inline-block;
+		padding: 1%;
+		width: 18%;
+		background-color: black;
+		color: white;
+		text-align: center;
+	}
+
+    .ul2 li{
+    	border: 2px solid black;
+		display: inline-block;
+		padding: 2%;
+		width: 18%;
+		background-color: whitesmoke;
+		text-align: center;
+	}
+
+	.b1{
+		background-color: white;
+		border: 2px solid black;
+		color: black;
+		margin-left: 42%;
+		margin-top: 6%;
+		padding: 2%;
+	}
+
+	.b1:hover{
+		background-color: black;
+		color: white;
+	}
+
+
+	.b2{
+		background-color: black;
+		margin-inline: 12px;
+		color: white;
+	}
+
+	.b2:hover{
+		background-color: white;
+		border: 2px solid black;
+		color: black;
+	}
+
+	.bg{
+		background-color: #c4c2af;
+		padding: 5%;
+	}
+
+
+</style>
+</head>
+<body>
+<div class="sidenav">
+  <img class="logo" src="images/EzAccess_Logo.jpg">
+  <a href="file:///C:/Users/User/Desktop/Employee%20Payroll%20System/tab1.html">HOME</a>
+  <a href=" file:///C:/Users/User/Desktop/Employee%20Payroll%20System/dashboard.html?uname=H&psw=h">DASHBOARD</a>
+  <a href="file:///C:/Users/User/Desktop/Employee%20Payroll%20System/payroll.html">PAYROLL</a>
+  <a href="#">ACCOUNT</a>
+</div>
+
+<div class="content">
+<h1>PAYROLL</h1>
+
+
+
+<div class="content2">
+	<p id="space">Pay Period</p>
+	<p>Dec. 18, 2023 - Dec. 20, 2023</p>
+	<p id="space">Pay Date</p>
+	<p>Dec. 20, 2023</p>
+</div>
+
+
+
+<div class="bg">
+	
+
+<ul class="ul1">
+<li>Employee</li>
+<li>Gross</li>
+<li>Net</li>
+<li>Status</li>
+<li>Actions</li>
+</ul>
+
+<ul class="ul2">
+<li>1</li>
+<li>₱20,000</li>
+<li>₱15,000</li>
+<li>completed</li>
+<button class="b2">Save</button><button class="b2">Delete</button>
+</ul>
+
+
+</div>
+
+
+<button type="submit" class="b1">ADD PAYROLL</button>
+
+</div>
+</body>
+</html>

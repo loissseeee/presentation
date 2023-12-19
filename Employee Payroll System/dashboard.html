@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="dbdesign.css">
+
+<style>
+
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size:16px;
+}
+
+
+
+/*BG OF NAV*/
+.sidenav { 
+  height: 100%;
+  width: 16%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  padding-top: 25px;
+}
+
+/*CONTENTS OF NAV*/
+.sidenav a {
+  text-align: center;
+  padding: 25.5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/*TRANSITION OF NAV*/
+.sidenav a:hover {
+  color: white;
+}
+
+
+/*SPACING*/
+.content{
+	margin-left:20%;
+	margin-right:10%;
+	margin-top:80;
+}
+
+
+/*IMG LOGO*/
+.logo{
+width: 100%;
+height: 12%;
+}
+
+
+
+.month {
+  padding: 50px 0px;
+  width: 100%;
+  background: black;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+
+  margin: 0;
+  padding: 10px 5px;
+  background-color: white;
+  border: 5px solid black;
+
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: black;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  border: 10px solid black;
+  background: white;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: black;
+}
+
+.days li .active {
+  padding: 5px;
+  background: black;
+  color: white !important
+}
+
+.dec{
+	color: white;
+}
+
+#b1{
+	float: right;
+	margin-top: -6%;
+	border-radius: 8px;
+	background-color: black;
+	border: 2px solid white;
+	color: white;
+	font-size: 140%;
+}
+
+#b1:hover{
+	border-radius: 8px;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+
+#b2{
+	color: white;
+	background-color: black;
+	border-radius: 8px;
+	border: 2px solid white;
+	margin: 2%;
+	font-size: 150%;
+}
+
+#b2:hover{
+	border-radius: 8px;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+#b3{
+	margin: 2%;
+	border-radius: 8px;
+	background-color: black;
+	border: 2px solid white;
+	color: white;
+	font-size: 150%;
+}
+
+#b3:hover{
+	border-radius: 8px;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+
+#b4{
+	border-radius: 8px;
+	background-color: black;
+	
+	color: white;
+	font-size: 150%;
+}
+
+#b4:hover{
+	border-radius: 8px;
+	background-color: white;
+	border: 2px solid black;
+	color: black;
+	cursor: pointer;
+
+}
+
+
+.logo{
+width: 100%;
+height: 12%;
+}
+
+footer{
+	text-align: center;
+	margin-left: 9%;
+	padding-top: 5%;
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <img class="logo" src="images/EzAccess_Logo.jpg">
+  <a href="file:///C:/Users/User/Desktop/Employee%20Payroll%20System/tab1.html">HOME</a>
+  <a href=" file:///C:/Users/User/Desktop/Employee%20Payroll%20System/dashboard.html?uname=H&psw=h">DASHBOARD</a>
+  <a href="file:///C:/Users/User/Desktop/Employee%20Payroll%20System/payroll.html">PAYROLL</a>
+  <a href="#">ACCOUNT</a>
+</div>
+
+
+<!-- HEAD -->
+
+<div class="content">
+
+    <h1><b>WELCOME!</b></h1>
+    <hr style="width:100%;border:5px solid black;">
+ </div>
+  
+  
+ <!-- ANNOUNCEMENTS -->
+
+ <div class="content" style="margin-top:70px; background-color: black; color: white;padding: 2%;">
+    <h1><b>Announcements</b></h1>
+    <button id="b1">ADD ANNOUNCEMENT</button>
+    <p style="background-color: white; color: black; padding: 4%;"><b>No announcements to show</b><br>There are no unread announcements to view.
+    </p>
+ </div>
+
+
+
+<!-- CALENDAR -->
+
+<div class="content" style="padding-top: 5%;">
+<h1>Calendar</h1>
+</div>
+
+<div class="content">
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li class="dec"> DECEMBER 2023</li>
+    <button id="b2">ADD EVENT</button>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Su</li>
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+</ul>
+
+<ul class="days">  
+  
+  <li style="color:#818181">26</li>
+  <li style="color:#818181">27</li>
+  <li style="color:#818181">28</li>
+  <li style="color:#818181">29</li>
+  <li style="color:#818181">30</li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li><span class="active">19</span></li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+  <li style="color:#818181">1</li>
+  <li style="color:#818181">2</li>
+  <li style="color:#818181">3</li>
+  <li style="color:#818181">4</li>
+  <li style="color:#818181">5</li>
+  <li style="color:#818181">6</li>
+</ul>
+
+<p style="font-size: 20px; border: 2px solid black; padding: 2%;"><b>No events to show</b><br>There are no events to show for the selected date.<p>
+ </div>
+
+
+ <!-- EMPLOYEES -->
+
+  <div class="content" style="background-color: black; text-align: center; padding: 5%; margin-top: 5%;">
+    <h1 style=" color: white;"><b>COMPANY EMPLOYEE</b></h1>
+    <button id="b3">ADD EMPOLYEE</button>
+    <p class="dec"><b>Our designers are thoughtfully chosen</b></p>
+  </div>
+
+
+
+  <!-- PAYROLL -->
+
+ 
+  <div class="content" style="background-color: white; border: 2px solid black; text-align: center; padding: 5%;margin-top: 5%;">
+  	 <h1 style="color: black; font-size: 40px;"><b>Payroll</b></h1>
+  	<a href="file:///C:/Users/User/Desktop/Employee%20Payroll%20System/payroll.html">
+    <button id="b4">RUN PAYROLL</button>
+    </a>
+    <p style="color: black;"><b>Next pay day<br><br>December 20, 2023</b></p>
+  </div>
+
+
+ 
+
+<!-- End page content -->
+</div>
+
+<!-- footer -->
+<footer>
+	<p>Made by: Loise Aguilar</p>
+</footer>
+
+</body>
+</html>
